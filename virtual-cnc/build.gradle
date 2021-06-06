@@ -1,0 +1,14 @@
+ext {
+    springBootVersion = '2.3.5.RELEASE'
+}
+
+dependencies {
+    implementation "org.springframework.boot:spring-boot-starter-web:${springBootVersion}"
+    compileOnly 'org.projectlombok:lombok'
+    annotationProcessor 'org.projectlombok:lombok'
+    implementation 'org.springframework.cloud:spring-cloud-starter-netflix-eureka-server:2.2.5.RELEASE'
+}
+
+test {
+    useJUnitPlatform()
+}
